@@ -11,6 +11,7 @@ namespace MistrzowieWynajmu.Models
 		public PropertyType Type { get; set; }
 		public string Descryption { get; set; }
 		public int Rooms { get; set; }
+		public int Area { get; set; }
 		public bool Washer { get; set; }
 		public bool Referigerator { get; set; }
 		public bool Iron { get; set; }
@@ -24,6 +25,6 @@ namespace MistrzowieWynajmu.Models
 	public enum PropertyType
 	{
 		House = 0,
-		Flat = 1
+		Flat  = 1
 	};
 }

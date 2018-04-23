@@ -26,7 +26,8 @@ namespace MistrzowieWynajmu
         {
             services.AddMvc();
 
-			var dbConnectionString = @"Server=(localdb)\mssqllocaldb;Database=mistrzowieDB;Trusted_Conection=True";
+			//var dbConnectionString = @"Server=KOMP-SKY\SQLEXPRESS;Database=mistrzowiewynajmu;Trusted_Connection=True";
+			var dbConnectionString = @"Server=(localdb)\mssqllocaldb;Database=mistrzowieDB;Trusted_Connection=True";
 			services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(dbConnectionString));
         }
 
